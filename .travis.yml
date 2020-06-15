@@ -23,11 +23,11 @@ before_deploy: "echo $AWS_ACCESS_KEY  ---  $AWS_SECRET_KEY"
 
 deploy:
   provider: elasticbeanstalk
-  region: "ca-central-1"
-  app: "workshop-ci-cd"
-  env: "WorkshopCiCd-env"
-  bucket: "elasticbeanstalk-ca-central-1-741302124457"
-  bucket_path: "workshop-ci-cd"
+  region: "ap-south-1"
+  app: "workshopcicdtravis"
+  env: "Workshopcicdtravis-env"
+  bucket: "elasticbeanstalk-ap-south-1-517280624701"
+  bucket_path: "workshopcicdtravis"
   on:
     branch: master
   access_key_id: "$AWS_ACCESS_KEY"
